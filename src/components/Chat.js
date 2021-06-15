@@ -12,7 +12,10 @@ const Chat = () => {
       <ChatHeader></ChatHeader>
 
       <div className="chat__messages">
-        <Message></Message>
+        <Message />
+        <Message />
+        <Message />
+        <Message />
       </div>
 
       <div className="chat__input">
