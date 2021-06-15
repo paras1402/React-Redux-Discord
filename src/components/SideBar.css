@@ -87,3 +87,31 @@
 .sidebar__voiceIcon {
   color: aquamarine;
 }
+
+.sidebar__profile {
+  display: flex;
+  align-items: center;
+  padding: 0.2rem;
+  justify-content: space-between;
+}
+.sidebar__profileName {
+  padding: 10px;
+  flex: 1;
+  color: whitesmoke;
+}
+.sidebar__profileName > p {
+  color: gray;
+}
+.sidebar__profileIcons {
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar__profileIcons > .MuiSvgIcon-root {
+  color: gray;
+  padding: 5px;
+  margin-right: 3rem;
+}
+.sidebar__profileIcon {
+  margin-left: 0.5rem;
+}

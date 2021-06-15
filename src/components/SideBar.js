@@ -6,12 +6,16 @@ import SidebarChannel from "./SidebarChannel";
 import CallIcon from "@material-ui/icons/Call";
 import SignalCellularAltIcon from "@material-ui/icons/SignalCellularAlt";
 import InfoIcon from "@material-ui/icons/Info";
+import { Avatar } from "@material-ui/core";
+import MicIcon from "@material-ui/icons/Mic";
+import HeadsetIcon from "@material-ui/icons/Headset";
+import SettingsIcon from "@material-ui/icons/Settings";
 
 function SideBar() {
   return (
     <div className="sidebar">
       <div className="sidebar__top">
-        <h3>Clever Programmer</h3>
+        <h3>Paras</h3>
         <ExpandMoreIcon />
       </div>
       <div className="sidebar__channels">
@@ -50,6 +54,21 @@ function SideBar() {
           <div className="sidebar__voiceIconsCall">
             <CallIcon></CallIcon>
           </div>
+        </div>
+      </div>
+
+      <div className="sidebar__profile">
+        <Avatar className="sidebar__profileIcon" fontSize="large"></Avatar>
+
+        <div className="sidebar__profileName">
+          <h3>Paras Kangra</h3>
+          <p>#CFE78X</p>
+        </div>
+
+        <div className="sidebar__profileIcons">
+          <MicIcon></MicIcon>
+          <HeadsetIcon></HeadsetIcon>
+          <SettingsIcon></SettingsIcon>
         </div>
       </div>
     </div>
