@@ -8,12 +8,13 @@ import NotificationsIcon from "@material-ui/icons/Notifications";
 
 import SearchIcon from "@material-ui/icons/Search";
 
-const ChatHeader = () => {
+const ChatHeader = ({ channelId, channelName }) => {
   return (
     <div className="chatheader">
       <div className="chatheader__left">
         <h3>
-          <span className="sidebarChannel__hash">#</span>Youtube
+          <span className="sidebarChannel__hash">#</span>
+          {channelName}
         </h3>
       </div>
       <div className="chatheader__right">

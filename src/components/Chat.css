@@ -1,14 +1,24 @@
 .chat {
   display: flex;
+  flex-direction: column-reverse;
   height: 100vh;
   flex: 0.75;
   flex-direction: column;
   background-color: #363a3f;
+
   /* justify-content: space-between; */
 }
 
 .chat__messages {
   flex: 1;
+  overflow: scroll;
+
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.chat__messages::-webkit-scrollbar {
+  display: none;
 }
 
 .chat__input {
@@ -23,6 +33,7 @@
   margin: 20px;
   box-shadow: 1px 2px #313030;
 }
+
 .chat__input > form {
   flex: 1;
 }
